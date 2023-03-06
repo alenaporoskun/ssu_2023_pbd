@@ -49,3 +49,4 @@ history > history.txt
 # git push -u origin lab2:lab2
 
 # кінець 2 практикуму
+ 
