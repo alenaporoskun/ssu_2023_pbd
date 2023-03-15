@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import sys
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
 def main():
     print_header("Check version")
@@ -76,24 +78,128 @@ def main():
     # In this example, a tuple of arrays was returned: one for each dimension.
     print("b=np.nonzero(a < 3):\n", b)
     print("(row indices, column indices)")
-    print("list(zip(b[0], b[1])):\n", list(zip(b[0], b[1])), "\n")
+    print("list(zip(b[0], b[1])):\n", list(zip(b[0], b[1])))
     #list_of_coordinates = list(zip(b[0], b[1]))
     #for coord in list_of_coordinates:
     #    print(coord)
 
     print_header("How to create an array from existing data")
+    a1 = np.array([[1, 1],
+                   [2, 2]])
+
+    a2 = np.array([[3, 3],
+                   [4, 4]])
+    print("a1:\n", a1, "\n", "a2:\n", a2)
+    print("np.vstack((a1, a2)):\n", np.vstack((a1, a2)))
+    print("np.hstack((a1, a2)):\n", np.hstack((a1, a2)))
+    print("np.arange(1, 25).reshape(2, 12):\n", np.arange(1, 25).reshape(2, 12), "\n")
+
+    a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+    print("a:\n", a)
+    b1 = a[0, :]
+    print("b1 = a[0, :]:\n", b1)
+    b2 = a.copy()
+    print("b2 = a.copy():\n", b2)
+    b1[0] = 99
+    print("b1[0]=99:\n", b1[0])
+    print("a:\n", a)
+    print("b2:\n", b2)
+
+    print_header("Basic array operations and Broadcasting")
+    data = np.array([1, 2, 3])
+    ones = np.ones(3, dtype=int)
+    print("data: ", data)
+    print("ones: ", ones)
+    print("data + ones: ", data + ones)
+    print("data - ones: ", data - ones)
+    print("data.sum(): ", data.sum())
+    print("data * 1.6: ", data * 1.6)
+    print("data.min(): ", data.min())
+
+    print_header("Creating matrices")
+    print("np.zeros(3):\n", np.zeros(3))
+    print("np.ones((3, 2)):\n", np.ones((3, 2)))
+    print("np.ones((2, 3, 4)):\n", np.ones((2, 3, 4)))
+
+    print_header("Generating random numbers")
+    rng = np.random.default_rng()
+    print("rng = np.random.default_rng()")
+    print("rng.random(3):\n", rng.random(3))
+    print("rng.integers(5, size=(2, 4)):\n", rng.integers(5, size=(2, 4)))
+
+    print_header("Transposing and reshaping a matrix")
+    data_new = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])
+    print("data_new:\n", data_new)
+    print("data_new.reshape(1, 9):\n", data_new.reshape(1, 9))
+    print("data_new.transpose():\n", data_new.transpose())
+
+    print_header("How to reverse an array")
+
+    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+    print("arr:\n", arr)
+    print("np.flip(arr):\n", np.flip(arr), "\n")
+
+    arr_2d = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+    print("arr_2d:\n", arr_2d)
+    print("np.flip(arr_2d):\n", np.flip(arr_2d))
+
+    print_header("How to access the docstring for more information")
+    print("help(max):\n")
+    help(max)
+    # max? - not work
+    # arr? - not work
+
+    # def fun_double(a):
+    #     '''Return a * 2'''
+    #     return a * 2
+    # help(fun_double(a))
+    # fun_double? or ??
+
+    print_header("How to save and load NumPy objects")
+    a = np.array([1, 2, 3, 4, 5, 6])
+    print("a:\n", a)
+    np.save('filename1', a)
+    print("np.save(\'filename1\', a)")
+    b = np.load('filename1.npy')
+    print("b = np.load('filename.npy'):\n", b, "\n")
+
+    np.savetxt('new_file_csv.csv', a)
+    print("np.savetxt('new_file_csv.csv', a)")
+    c = np.loadtxt('new_file_csv.csv')
+    print("c = np.loadtxt('new_file_csv.csv'):\n", c)
 
 
+    print_header("Importing and exporting a CSV")
+    # import pandas as pd
+    arr_art = np.array([["Billie Holiday", 'Jazz', 1300000, 27000000],
+                        ["Jimmie Hendrix", 'Rock', 2700000, 70000000],
+                        ["SIA", "Pop", 2000000, 74000000]])
+    df = pd.DataFrame(arr_art, columns=["Artist",  "Genre",  "Listeners",  "Plays"])
+    print("df:\n", df, "\n")
+    print("df.loc[2]:\n", df.loc[2], "\n")
 
+    data = {
+        "calories": [420, 380, 390],
+        "duration": [50, 40, 45]
+    }
+    df2 = pd.DataFrame(data, index=["day1", "day2", "day3"])
+    print("df2:\n", df2, "\n")
+    print("df2.loc[\"day2\"]:\n", df2.loc["day2"], "\n")
 
+    df2.to_csv('pd_csv.csv')
+    print("df2.to_csv('pd_csv.csv')")
+    data_new = pd.read_csv('pd_csv.csv')
+    print("data_new = pd.read_csv('pd_csv.csv'):\n", data_new)
 
+    print_header("Plotting arrays with Matplotlib")
+    # import matplotlib.pyplot as plt
+    x = np.linspace(0, 5, 20)
+    y = np.linspace(0, 10, 20)
+    print("x:\n", x)
+    print("y:\n", y)
 
-
-    
-    print_header("")
-    #print(":\n", ,"\n")
-    print(":\n", "\n")
-    print(":\n", )
+    plt.plot(x, y, 'purple')  # line
+    plt.plot(x, y, 'o')  # dots
 
 
 def print_version():
