@@ -31,6 +31,10 @@ def main():
     remove_dst()
     unpack_arc()
 
+    print_header("3. Create folder 'src' and copy the csv files to it.")
+    fun_copy_csv_files()
+
+
     print_header("3. Read csv file")
     # 3.1 Read csv file as list of list
     # data_list = read_test_csv_list(dst_dir, fn_csv_in_zip)
@@ -39,7 +43,8 @@ def main():
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     #fn1 = 'ppp-master/data/ppp-gdp.csv'
-    fn1 = 'oil-prices-master/data/brent-daily.csv'
+    fn1 = '.src/oil-prices/brent-daily.csv'
+
 
     files_oil = os.listdir('./data/oil-prices-master/data/')
     files_population = os.listdir('./data/population-master/data/')
@@ -121,6 +126,31 @@ def unpack_arc():
         zip_full_path = os.path.join(src_dir, zip_file)
         with ZipFile(zip_full_path, 'r') as zip_obj:
             zip_obj.extractall(dst_dir)
+
+def fun_copy_csv_files():
+    # Create folder 'src' and copy the csv files
+    if os.path.exists('./src') == False:
+        print("Copy the csv files...\n")
+        os.mkdir('./src')
+        # print(os.getcwd())
+        paths_from = ['./data/oil-prices-master/data', './data/population-master/data/', './data/ppp-master/data/']
+        paths_to = ['./src/oil-prices', './src/population', './src/ppp']
+
+        for i in range(len(paths_from)):
+            os.mkdir(paths_to[i])
+            k = 0
+            for file in os.listdir(paths_from[i]):
+                k += 1
+                print("#", k)
+                print('name of file: ', file)
+                path_join = os.path.join(paths_from[i], file)
+                print('path_join: ', path_join, '\n')
+                shutil.copy2(path_join, paths_to[i])
+
+            if os.listdir(paths_from[i]) == os.listdir(paths_to[i]):
+                print("All files from folder '{}' to folder '{}' are copied.\n".format(paths_from[i], paths_to[i]))
+
+        print("The process of copying files is complete.\n")
 
 
 def read_test_csv_list(dn, fn):
