@@ -23,9 +23,19 @@
 #### Scripts
 Для запуску докера з Jupiter Notebook.
 - [bash example_10_start_docker_compose_study_jupyter](labs/lab7/example_10_start_docker_compose_study_jupyter.sh)
+або
+- [bash example_20_start_docker_cli_study_jupyter](labs/lab7/example_20_start_docker_cli_study_jupyter.sh)
 
 
 ### Файли
+
+Файли, необхідні для розвертання віртуального середовища та Jupiter Notebook через docker або docker_compose (до них входять скрипти з пункту Scripts):
+- 00_setup_venv.sh
+- Dockerfile.study_bd_jupyter
+- docker-compose.yml
+- requirements.txt
+- example_10_start_docker_compose_study_jupyter.sh
+- example_20_start_docker_cli_study_jupyter.sh
 
 Файл виводу роботи [script_convert.py](labs/lab7/samples/script_convert.py):
 - [output__script_convert.txt](labs/lab7/samples/output__script_convert.txt)
