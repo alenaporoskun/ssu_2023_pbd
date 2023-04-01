@@ -78,8 +78,6 @@
 - [correlation_population_ppp.csv](labs/lab7/samples/tables_and_graphs/correlation_population_ppp.csv)
 - [correlation_population_oil.csv](labs/lab7/samples/tables_and_graphs/correlation_population_oil.csv)
 
-- [table 1](data/file1link1.json)
-
 #### Графіки
 - [line1_population.png](labs/lab7/samples/tables_and_graphs/line1_population.png)
 
@@ -100,7 +98,9 @@
     1. Розпакування .zip архівів в папку [data](labs/lab7/data/).
     2. Копіювання необхідних файлів з даними у папку [src](labs/lab7/src/).
     3. Конвертування csv-файлів у формати .json та .xlsx.
+
 3. Виконуємо код [jnb sample](labs/lab7/samples/sample.ipynb) в Jupiter Notebook.
+
 4. Результат [jnb sample](labs/lab7/samples/sample.ipynb)
     1. Створює табличку "Популяції за інтервал часу 1960-2020" за відповідним варіантом 3-х форматах (.csv, .json, .xlsx):
        [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
