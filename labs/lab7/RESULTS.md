@@ -106,15 +106,15 @@
        * [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
     2. Графічно відображає дані з таблички п.1 у 3-х стилях: лінійний(у 2 варіантах), секторний та гістограмний у 3-х форматах (.png, .jpg, .pdf).
        Зокрема:
-        * - [line1_population.png](labs/lab7/samples/tables_and_graphs/line1_population.png)
+        * [line1_population.png](labs/lab7/samples/tables_and_graphs/line1_population.png)
         * - [line2_population.png](labs/lab7/samples/tables_and_graphs/line2_population.png)
         * - [pie_population.png](labs/lab7/samples/tables_and_graphs/pie_population.png)
         * - [bar_population.png](labs/lab7/samples/tables_and_graphs/bar_population.png)
     3. Відображає в табличному вигляді основні стаститичні величини: min, max, mean, квантіли 25%, 75%, 95%. Наприклад, для даних популяції:
         * [statistics_population.csv](labs/lab7/samples/tables_and_graphs/statistics_population.csv)
     4. Показує по роках по кожній країні для відповідного варіанта зв'язок між іншими datasets (для яких є дані):
-         * I. зв'язок ціни на нафту з ppp
-         *  II. відсоток ppp окремої країни до середнього ppp всіх країн за рік
-         * III. зв'язок популяції та ppp
-         *  IV. зв'язок популяції та цін на нафту
+         I. зв'язок ціни на нафту з ppp
+         II. відсоток ppp окремої країни до середнього ppp всіх країн за рік
+         III. зв'язок популяції та ppp
+         IV. зв'язок популяції та цін на нафту
        
