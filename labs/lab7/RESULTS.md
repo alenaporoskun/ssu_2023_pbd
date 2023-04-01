@@ -27,6 +27,9 @@
 
 ### Файли
 
+Файл виводу роботи [script_convert.py](labs/lab7/samples/script_convert.py):
+- [output__script_convert.txt](labs/lab7/samples/output__script_convert.txt)
+
 #### Вхідні дані (разархівовані та сконвертовані дані) з архівів:
 
 - [oil-prices.zip](labs/lab7/datasets/oil-prices.zip)
@@ -59,25 +62,21 @@
 
 #### Сгенеровані нові дані
 
-##### table 1 
+##### table 1 in 3 formats
 
 - [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
 - [data_population_1960_2020.json](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.json)
 - [data_population_1960_2020.xlsx](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.xlsx)
 
-##### table 2
+##### tables 2 - 8
 
 - [statistics_population.csv](labs/lab7/samples/tables_and_graphs/statistics_population.csv)
 - [statistics_ppp.csv](labs/lab7/samples/tables_and_graphs/statistics_ppp.csv)
 - [statistics_oil.csv](labs/lab7/samples/tables_and_graphs/statistics_oil.csv)
-
 - [correlation_oil_ppp.csv](labs/lab7/samples/tables_and_graphs/correlation_oil_ppp.csv)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [df_percentage_ppp.csv](labs/lab7/samples/tables_and_graphs/df_percentage_ppp.csv)
+- [correlation_population_ppp.csv](labs/lab7/samples/tables_and_graphs/correlation_population_ppp.csv)
+- [correlation_population_oil.csv](labs/lab7/samples/tables_and_graphs/correlation_population_oil.csv)
 
 - [table 1](data/file1link1.json)
 
@@ -95,14 +94,16 @@
 
 ## Інструкція до роботи
 
-1. Запускаемо [программу 1](src/hello_world.py).
-2. Результат программи 1:
-    1. ...
-    2. ...
-    3. ...
-3. Виконуємо код програми 2 в ноутбук ...
-4. Результат программи 2
-    1. ...
-    2. ...
+1. Запускаемо [script_convert](labs/lab7/samples/script_convert.py).
+
+2. Результат script_convert:
+    1. Розпакування .zip архівів в папку [data](labs/lab7/data/).
+    2. Копіювання необхідних файлів з даними у папку [src](labs/lab7/src/).
+    3. Конвертування csv-файлів у формати .json та .xlsx.
+3. Виконуємо код [jnb sample](labs/lab7/samples/sample.ipynb) в Jupiter Notebook.
+4. Результат [jnb sample](labs/lab7/samples/sample.ipynb)
+    1. Створює табличку "Популяції за інтервал часу 1960-2020" за відповідним варіантом 3-х форматах (.csv, .json, .xlsx):
+       * [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
+    2. Графічно відображає дані з таблички п.1 у 3-х стилях: лінійний(у 2 варіантах), секторний та гістограмний. 
     3. ...
        ...
