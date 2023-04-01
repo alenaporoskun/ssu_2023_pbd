@@ -23,6 +23,7 @@
 #### Scripts
 Для запуску докера з Jupiter Notebook.
 - [bash example_10_start_docker_compose_study_jupyter](labs/lab7/example_10_start_docker_compose_study_jupyter.sh)
+
 або
 - [bash example_20_start_docker_cli_study_jupyter](labs/lab7/example_20_start_docker_cli_study_jupyter.sh)
 
