@@ -1,10 +1,10 @@
 # Пояснювальна записка та висновок до лабораторного практикуму
 
-Результатом лабораторного практикуму для 3 країн
+Результатом лабораторного практикуму для 3 країн (згідно з варіантом з файлу [4](labs/lab7/tasks.csv))
 
-1. Країна 1
-2. Країна 2
-3. Країна 3
+1. Bermuda
+2. France
+3. Panama
 
 є наступні матеріали.
 
@@ -13,6 +13,9 @@
 ### Python code
 
 - [hello world](src/hello_world.py)
+
+- [script_convert](labs/lab7/samples/script_convert.py)
+
 
 ### Jupiter Notebooks
 
