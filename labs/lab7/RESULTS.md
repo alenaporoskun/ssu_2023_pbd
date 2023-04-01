@@ -62,24 +62,34 @@
 ##### table 1 
 
 - [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
-- [table 1](data/file1link1.xlsx)
-- [table 1](data/file1link1.json)
+- [data_population_1960_2020.json](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.json)
+- [data_population_1960_2020.xlsx](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.xlsx)
 
 ##### table 2
 
-- [table 1](data/file1link1.csv)
-- [table 1](data/file1link1.xlsx)
+- [statistics_population.csv](labs/lab7/samples/tables_and_graphs/statistics_population.csv)
+- [statistics_ppp.csv](labs/lab7/samples/tables_and_graphs/statistics_ppp.csv)
+- [statistics_oil.csv](labs/lab7/samples/tables_and_graphs/statistics_oil.csv)
+
+- [correlation_oil_ppp.csv](labs/lab7/samples/tables_and_graphs/correlation_oil_ppp.csv)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
 - [table 1](data/file1link1.json)
 
 #### Графіки
 - [line1_population.png](labs/lab7/samples/tables_and_graphs/line1_population.png)
+
 - [line2_population.png](labs/lab7/samples/tables_and_graphs/line2_population.png)
+- [line2_population.jpg](labs/lab7/samples/tables_and_graphs/line2_population.jpg)
+- [line2_population.pdf](labs/lab7/samples/tables_and_graphs/line2_population.pdf)
+
 - [pie_population.png](labs/lab7/samples/tables_and_graphs/pie_population.png)
 - [bar_population.png](labs/lab7/samples/tables_and_graphs/bar_population.png)
-
-- [img 1](src/file1link1.jnb)
-- [img 2](img/file1link2.png)
-- [img 2](img/file1link2.jpg)
 
 ---
 
