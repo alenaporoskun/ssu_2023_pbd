@@ -17,7 +17,6 @@
 
 ### Jupiter Notebooks
 
-- [jnb hello world](src/hello_world.jnb)
 - [jnb sample](labs/lab7/samples/sample.ipynb)
 
 
@@ -36,33 +35,33 @@
 
 Архіви були розпаковані в папку [data](labs/lab7/data/), з них були скопійовані файли csv-формату у папку [src](labs/lab7/src/).
 
-##### file 1
+##### files 1.1 - 1.8 from folder 'src/oil-prices':
 
-- CSV: [file 1](labs/lab7/src/oil-prices/brent-daily.csv)
-- JSON: [file 1](labs/lab7/src/oil-prices/brent-daily.json)
-- XLSX [file 1](labs/lab7/src/oil-prices/brent-daily_pandas.xlsx)
+- CSV: [brent-daily.csv](labs/lab7/src/oil-prices/brent-daily.csv)
+- JSON: [brent-daily.json](labs/lab7/src/oil-prices/brent-daily.json)
+- XLSX [brent-daily.xlsx](labs/lab7/src/oil-prices/brent-daily_pandas.xlsx)
 
 Крім brent-daily.csv, також були розпаковані та сконвертовані у формати .csv, .json, .xlsx інші файли, такі як: 
 - brent-monthly.csv, brent-weekly.csv, brent-year.csv, 
 - wti-daily.csv, wti-monthly.csv, wti-weekly.csv, wti-year.csv.
 
-##### file 2
+##### file 2 from folder 'src/population':
 
-- CSV: [file 1](data/file1link1.csv)
-- JSON: [file 1](data/file1link1.json)
-- XLSX [file 1](data/file1link1.xlsx)
+- CSV: [population.csv](labs/lab7/src/population/population.csv)
+- JSON: [population.json](labs/lab7/src/population/population.json)
+- XLSX [population_pandas.xlsx](labs/lab7/src/population/population_pandas.xlsx)
 
-##### file 3
+##### file 3 from folder 'src/ppp':
 
-- CSV: [file 1](data/file1link1.csv)
-- JSON: [file 1](data/file1link1.json)
-- XLSX [file 1](data/file1link1.xlsx)
+- CSV: [ppp-gdp.csv](labs/lab7/src/ppp/ppp-gdp.csv)
+- JSON: [ppp-gdp.json](labs/lab7/src/ppp/ppp-gdp.json)
+- XLSX [ppp-gdp_pandas.xlsx](labs/lab7/src/ppp/ppp-gdp_pandas.xlsx)
 
 #### Сгенеровані нові дані
 
-##### table 1
+##### table 1 
 
-- [table 1](data/file1link1.csv)
+- [data_population_1960_2020.csv](labs/lab7/samples/tables and graphs/data_population_1960_2020.csv)
 - [table 1](data/file1link1.xlsx)
 - [table 1](data/file1link1.json)
 
@@ -73,6 +72,10 @@
 - [table 1](data/file1link1.json)
 
 #### Графіки
+- [line1_population.png](labs/lab7/samples/tables and graphs/line1_population.png)
+- [line2_population.png](labs/lab7/samples/tables and graphs/line2_population.png)
+- [pie_population.png](labs/lab7/samples/tables and graphs/pie_population.png)
+- [bar_population.png](labs/lab7/samples/tables and graphs/bar_population.png)
 
 - [img 1](src/file1link1.jnb)
 - [img 2](img/file1link2.png)
