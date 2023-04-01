@@ -61,7 +61,7 @@
 
 ##### table 1 
 
-- [data_population_1960_2020.csv](labs/lab7/samples/tables and graphs/data_population_1960_2020.csv)
+- [data_population_1960_2020.csv](labs/lab7/samples/tables_and_graphs/data_population_1960_2020.csv)
 - [table 1](data/file1link1.xlsx)
 - [table 1](data/file1link1.json)
 
@@ -72,10 +72,10 @@
 - [table 1](data/file1link1.json)
 
 #### Графіки
-- [line1_population.png](labs/lab7/samples/tables and graphs/line1_population.png)
-- [line2_population.png](labs/lab7/samples/tables and graphs/line2_population.png)
-- [pie_population.png](labs/lab7/samples/tables and graphs/pie_population.png)
-- [bar_population.png](labs/lab7/samples/tables and graphs/bar_population.png)
+- [line1_population.png](labs/lab7/samples/tables_and_graphs/line1_population.png)
+- [line2_population.png](labs/lab7/samples/tables_and_graphs/line2_population.png)
+- [pie_population.png](labs/lab7/samples/tables_and_graphs/pie_population.png)
+- [bar_population.png](labs/lab7/samples/tables_and_graphs/bar_population.png)
 
 - [img 1](src/file1link1.jnb)
 - [img 2](img/file1link2.png)
